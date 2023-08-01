@@ -95,5 +95,6 @@ export async function getStaticProps(context) {
 		props: {
 			meetupData,
 		},
+		revalidate: 5
 	}
 }
