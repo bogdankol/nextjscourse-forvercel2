@@ -4,7 +4,7 @@ import classes from './MeetupDetail.module.css'
 
 export default function MeetupDetail ({ image, title, address, description }) {
   return <section className={classes.detail}>
-    <Image src={image} alt={title} width={300} height={400} />
+    <img src={image} alt={title} />
     <h1>{title}</h1>
     <address>{address}</address>
     <p>{description}</p>

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 function MeetupItem(props) {
 
@@ -16,7 +16,7 @@ function MeetupItem(props) {
     <li className={classes.item} key={props.title} >
       <Card>
         <div className={classes.image}>
-          <Image src={props.image} alt={props.title} width={300} height={400} />
+          <img src={props.image} alt={props.title} />
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
